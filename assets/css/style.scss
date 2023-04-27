@@ -1,0 +1,125 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+
+*{
+    box-sizing:  border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #232323;
+}
+main{
+    height: 100vh;
+     background: #232323;
+    >section{
+        >div{
+           #input-box{
+                color: #f8f8f8;
+                height: 200px;
+                width: 100%;
+                background: none;
+                background-color: #0e3b38;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                letter-spacing: 3px;
+            }
+            >.key-hand{
+                >div{
+                    >.used{
+                        background-color: lightblue;
+                        opacity: 0.5;
+                    }
+                    cursor: pointer;
+                    color: #ffffff;
+                    height: 80px;
+                    width: 80px !important;
+                    margin: 10px;
+                     border-radius: 10px;
+                    position: relative;
+                    background: linear-gradient(180deg, #282828, #0c0c0c) !important;
+                    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+                    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+                    0 0 0 2px rgba(0, 0, 0, 0.75),
+                    10px 20px 25px rgba(0, 0, 0, 0.4);
+                    overflow: hidden;
+                    &:hover::after{
+                        box-shadow: -10px -10px 10px rgba(13, 200, 213, 0.75),
+                        10px 5px 10px rgba(124, 189, 227, 0.738) ;
+                        border-bottom: 1px solid #00ffff;
+                        border-left: 1px solid #00ffff;
+                        border-top: 1px solid #00ffff;
+                     }
+                    &::after{
+                        transition: .4s;
+                        content: '';
+                        display: flex;
+                        position: absolute;
+                        top: 3px;left: 4px;
+                        bottom: 14px;right: 12px;
+                        border-radius: 10px;
+                        background: linear-gradient(90deg, #232323, #2a2a2a);
+                        box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),
+                        10px 5px 10px rgba(0, 0, 0, 0.5) ;
+                        border-bottom: 1px solid #0004;
+                        border-left: 1px solid #0004;
+                        border-top: 1px solid #0009;
+                    }
+                    &:hover span{
+                        color: #00ffff;
+                       
+                    }
+                    >span{
+                        z-index: 22;
+                        display: flex;
+                        position: relative;
+                        color: #ffffff;
+                        font-size: 20px;
+                        //text-transform: uppercase;
+                        font-family: 'Poppins', sans-serif;
+                        transition: .4s;
+                       
+                    }
+
+                
+                }
+            
+            }
+            >.last{
+                div{
+                    
+                    
+                    &:nth-of-type(1){
+                         width: 450px !important;
+                          background-color: #ffffff !important;
+                    }
+                    &:nth-of-type(2){
+                        width: 250px !important; 
+                         >span{
+                            color: aqua;
+                            font-size: 24px;
+                            letter-spacing: 4px;
+                         }
+                    }
+                    &:nth-of-type(3){
+                           width: 220px !important; 
+                        >span{
+                              color: aqua;
+                            font-size: 24px;
+                            letter-spacing: 4px;
+                         }
+                    }
+                  
+                }
+            }
+        }
+    }
+}
+#Caps{
+    width: 200px !important; 
+}
+.caps-l{
+    text-transform: uppercase;
+}
